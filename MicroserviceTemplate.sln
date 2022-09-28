@@ -14,6 +14,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceTemplate.UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceTemplate.IntegrationTests", "MicroserviceTemplate\tests\MicroserviceTemplate.IntegrationTests\MicroserviceTemplate.IntegrationTests.csproj", "{440317DC-DB75-402D-AB4C-FF3280A4C114}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8EF69FCB-DE40-4219-B0C4-37EDC06B770A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9FD5BBFE-EB4D-407A-A0DA-12610DF559E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceTemplate.DTO", "MicroserviceTemplate\src\MicroserviceTemplate.DTO\MicroserviceTemplate.DTO.csproj", "{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceTemplate.Model", "MicroserviceTemplate\src\MicroserviceTemplate.Model\MicroserviceTemplate.Model.csproj", "{02B2CE27-0250-4F89-AB23-E39BCC0B7838}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{DCD04BC8-B718-421A-8054-4F76645B7380}"
+	ProjectSection(SolutionItems) = preProject
+		MicroserviceTemplate\nuget.config = MicroserviceTemplate\nuget.config
+		MicroserviceTemplate\Directory.Packages.props = MicroserviceTemplate\Directory.Packages.props
+		MicroserviceTemplate\global.json = MicroserviceTemplate\global.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +63,24 @@ Global
 		{440317DC-DB75-402D-AB4C-FF3280A4C114}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440317DC-DB75-402D-AB4C-FF3280A4C114}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440317DC-DB75-402D-AB4C-FF3280A4C114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B2CE27-0250-4F89-AB23-E39BCC0B7838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B2CE27-0250-4F89-AB23-E39BCC0B7838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B2CE27-0250-4F89-AB23-E39BCC0B7838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B2CE27-0250-4F89-AB23-E39BCC0B7838}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81C46635-A9C2-4129-BA87-61AEAEC8A584} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
+		{5A4E5860-E0EE-43E8-9022-E0E6FA6B7015} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
+		{3B4BF370-14F3-4D40-897D-D5CB01624401} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
+		{2DAF57C3-F1DB-4D8C-BC43-2A9BA0DABB3A} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
+		{D710C338-DD6D-462A-B136-45DA57ABF2FC} = {9FD5BBFE-EB4D-407A-A0DA-12610DF559E1}
+		{440317DC-DB75-402D-AB4C-FF3280A4C114} = {9FD5BBFE-EB4D-407A-A0DA-12610DF559E1}
+		{3548E29B-03C1-4E9D-8DC1-F3173F08AD06} = {9FD5BBFE-EB4D-407A-A0DA-12610DF559E1}
+		{4D2150CC-FBC0-45CF-9CA5-F0557C4FCC01} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
+		{02B2CE27-0250-4F89-AB23-E39BCC0B7838} = {8EF69FCB-DE40-4219-B0C4-37EDC06B770A}
 	EndGlobalSection
 EndGlobal
