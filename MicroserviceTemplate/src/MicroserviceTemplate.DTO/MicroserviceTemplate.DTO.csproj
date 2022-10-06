@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MicroserviceTemplate.Model\MicroserviceTemplate.Model.csproj" />
   </ItemGroup>
+  
   <Target Name="Mapster" AfterTargets="AfterBuild">
     <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet tool restore" />
     <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster model -a &quot;$(TargetDir)$(ProjectName).dll&quot; -o Entities -r" />
